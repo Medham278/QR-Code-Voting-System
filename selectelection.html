@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!--checkbox-->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--checkbox ending-->
+    <title>QR Based Voting App/Elections</title>
+    <meta content="" name="descriptison" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <style type="text/css">
+      .PAN {
+        text-transform: uppercase;
+      }
+      .error {
+        color: Red;
+        visibility: hidden;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top">
+      <div class="container d-flex align-items-center">
+        <h1 class="logo mr-auto">
+          <a href="index.html">QR Based Voting app</a>
+        </h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+        <nav class="nav-menu d-none d-lg-block">
+          <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+          </ul>
+        </nav>
+        <!-- .nav-menu -->
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <span>Select Election</span>
+          <h2>Select Election</h2>
+          <p>Please Select Election and fill in the Information Below</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div
+              class="custom-control custom-switch"
+              style="margin-right: 50px"
+            >
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="nationallevel"
+                name="example"
+              />
+              <label class="custom-control-label" for="nationallevel"
+                >National Level</label
+              >
+            </div>
+
+            <div class="custom-control custom-switch">
+              <input
+                type="checkbox"
+                class="custom-control-input"
+                id="statelevel"
+                name="example"
+              />
+              <label class="custom-control-label" for="statelevel"
+                >State Level</label
+              >
+            </div>
+          </div>
+          <div style="width: auto">
+            <label
+              class="input-group-text"
+              for="inputGroupSelect01"
+              class="input-group-text"
+              >Select State
+
+              <select
+                id="inputGroupSelect01"
+                name="dom_state"
+                style="width: auto"
+              >
+                <option selected disabled>Choose...</option>
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Andaman and Nicobar Islands">
+                  Andaman and Nicobar Islands
+                </option>
+                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                <option value="Assam">Assam</option>
+                <option value="Bihar">Bihar</option>
+                <option value="Chandigarh">Chandigarh</option>
+                <option value="Chhattisgarh">Chhattisgarh</option>
+                <option value="Dadra and Nagar Haveli">
+                  Dadra and Nagar Haveli
+                </option>
+                <option value="Daman and Diu">Daman and Diu</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Lakshadweep">Lakshadweep</option>
+                <option value="Puducherry">Puducherry</option>
+                <option value="Goa">Goa</option>
+                <option value="Gujarat">Gujarat</option>
+                <option value="Haryana">Haryana</option>
+                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Kerala">Kerala</option>
+                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Manipur">Manipur</option>
+                <option value="Meghalaya">Meghalaya</option>
+                <option value="Mizoram">Mizoram</option>
+                <option value="Nagaland">Nagaland</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Punjab">Punjab</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Sikkim">Sikkim</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Telangana">Telangana</option>
+                <option value="Tripura">Tripura</option>
+                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                <option value="Uttarakhand">Uttarakhand</option>
+                <option value="West Bengal">West Bengal</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch"></div>
+        </div>
+        <br /><br />
+        <div class="row">
+          <table class="table" style="width: 100%; margin: 20px">
+            <thead class="justify-content-center" style="margin: 20px">
+              <tr>
+                <th style="color: aliceblue; background: rgb(93, 99, 94)">
+                  Election Name
+                </th>
+                <th style="color: aliceblue; background: rgb(93, 99, 94)">
+                  Link
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Maharashtra State Elections</td>
+                <td>
+                  <a href="#" for="electionlink" style="margin-bottom: 50px">
+                    <button type="button" class="btn btn-primary">
+                      Vote Now
+                    </button>
+                  </a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <main id="main">
+      <!-- ======= Featured Services Section ======= -->
+      <!--
+      <section id="featured-services" class="featured-services">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="icon-box">
+                <div class="icon"><i class="icofont-computer"></i></div>
+                <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                <p class="description">
+                  Voluptatum deleniti atque corrupti quos dolores et quas
+                  molestias excepturi sint occaecati cupiditate non provident
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+              <div class="icon-box">
+                <div class="icon"><i class="icofont-image"></i></div>
+                <h4 class="title"><a href="">Dolor Sitema</a></h4>
+                <p class="description">
+                  Minim veniam, quis nostrud exercitation ullamco laboris nisi
+                  ut aliquip ex ea commodo consequat tarad limino ata
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+              <div class="icon-box">
+                <div class="icon"><i class="icofont-tasks-alt"></i></div>
+                <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+                <p class="description">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    -->
+      <!-- End Featured Services Section -->
+
+      <!-- End Testimonials Section -->
+
+      <!-- ======= Team Section ======= -->
+      <!-- <section id="team" class="team section-bg">
+        <div class="container">
+          <div class="section-title">
+            <span>Team</span>
+            <h2>Team</h2>
+            <p>Meet our team</p>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 col-md d-flex align-items-stretch">
+              <div class="member">
+                <img src="assets/img/team/team-1.jpg" alt="" />
+                <h4>Mrunal Padalkar</h4>
+                <span>Front-End Developer</span>
+                <p>Roll Number:18CE1011 <br />Batch: B1-14</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md d-flex align-items-stretch">
+              <div class="member">
+                <img src="assets/img/team/team-2.jpg" alt="" />
+                <h4>Medha Mathur</h4>
+                <span>Back-End Developer</span>
+                <p>Roll Number:18CE2008 <br />Batch: B1-4</p>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md d-flex align-items-stretch">
+              <div class="member">
+                <img src="assets/img/team/team-3.jpg" alt="" />
+                <h4>Sahil Mhatre</h4>
+                <span>Back-End Developer</span>
+                <p>Roll Number:18CE <br />Batch: B1-7</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md d-flex align-items-stretch">
+              <div class="member">
+                <img src="assets/img/team/team-3.jpg" alt="" />
+                <h4>Satyam Mhadlekar</h4>
+                <span>Back-End Developer</span>
+                <p>Roll Number:18CE <br />Batch: B1-3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!-- End Team Section -->
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-6">
+              <h3>QR Based Voting App</h3>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="container footer-bottom clearfix">
+        <div class="copyright">
+          &copy; Copyright <strong><span>QR Based Voting App</span></strong
+          >. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/enno-free-simple-bootstrap-template/ -->
+        </div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+    <!-- Aadhar Card Validate -->
+    <script type="text/javascript">
+      function AadharValidate() {
+        var aadhar = document.getElementById("txtAadhar").value;
+        var adharcardTwelveDigit = /^\d{12}$/;
+        var adharSixteenDigit = /^\d{16}$/;
+        if (aadhar != "") {
+          if (aadhar.match(adharcardTwelveDigit)) {
+            return true;
+          } else if (aadhar.match(adharSixteenDigit)) {
+            return true;
+          } else {
+            alert("Enter valid Aadhar Number");
+            return false;
+          }
+        }
+      }
+    </script>
+
+    <!-- Pan Card Validate -->
+    <script type="text/javascript">
+      function ValidatePAN() {
+        var txtPANCard = document.getElementById("txtPANCard");
+        var lblPANCard = document.getElementById("lblPANCard");
+        var regex = /([A-Z]){5}([0-9]){4}([A-Z]){1}$/;
+        if (regex.test(txtPANCard.value.toUpperCase())) {
+          lblPANCard.style.visibility = "hidden";
+          return true;
+        } else {
+          lblPANCard.style.visibility = "visible";
+          return false;
+        }
+      }
+    </script>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
